@@ -1453,10 +1453,10 @@ tide:
     - openshift-priv/build-machinery-go
     - openshift-priv/cloud-provider-openstack
     - openshift-priv/csi-driver-manila-operator
-    - openshift-priv/debug-network
     - openshift-priv/elasticsearch-proxy
     - openshift-priv/kubernetes-nmstate
     - openshift-priv/library-go
+    - openshift-priv/network-tools
     - openshift-priv/openshift-tests
     - openshift-priv/openshift-tests-private
     - openshift-priv/osd-metrics-exporter
@@ -1488,7 +1488,6 @@ tide:
     - openshift/csi-driver-manila-operator
     - openshift/custom-domains-operator
     - openshift/deadmanssnitch-operator
-    - openshift/debug-network
     - openshift/dedicated-admin-operator
     - openshift/docker-distribution
     - openshift/elasticsearch-proxy
@@ -1516,6 +1515,7 @@ tide:
     - openshift/managed-upgrade-operator
     - openshift/managed-velero-operator
     - openshift/must-gather-operator
+    - openshift/network-tools
     - openshift/online-registration
     - openshift/openshift-gitops-examples
     - openshift/openshift-tests

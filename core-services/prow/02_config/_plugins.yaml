@@ -4490,8 +4490,6 @@ plugins:
   - approve
   openshift-priv/csi-operator:
   - approve
-  openshift-priv/debug-network:
-  - approve
   openshift-priv/egress-router-cni:
   - approve
   openshift-priv/elasticsearch-operator:
@@ -4595,6 +4593,8 @@ plugins:
   openshift-priv/must-gather:
   - approve
   openshift-priv/network-metrics-daemon:
+  - approve
+  openshift-priv/network-tools:
   - approve
   openshift-priv/node-feature-discovery:
   - approve
@@ -5004,7 +5004,7 @@ plugins:
   - approve
   openshift/deadmanssnitch-operator:
   - approve
-  openshift/debug-network:
+  openshift/network-tools:
   - approve
   openshift/dedicated-admin-operator:
   - approve

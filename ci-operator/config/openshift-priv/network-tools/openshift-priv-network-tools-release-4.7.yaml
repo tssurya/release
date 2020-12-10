@@ -1,12 +1,20 @@
 base_images:
   base:
-    name: "4.6"
-    namespace: ocp
+    name: 4.7-priv
+    namespace: ocp-private
     tag: base
   ocp_builder_golang-1.12:
     name: builder
     namespace: ocp
     tag: golang-1.12
+  ocp_builder_golang-1.15:
+    name: builder
+    namespace: ocp
+    tag: golang-1.15
+  ocp_builder_rhel-8-golang-1.15-openshift-4.7:
+    name: builder
+    namespace: ocp
+    tag: rhel-8-golang-1.15-openshift-4.7
   ocp_builder_rhel-8-golang-openshift-4.6:
     name: builder
     namespace: ocp
@@ -14,28 +22,30 @@ base_images:
 binary_build_commands: make build --warn-undefined-variables
 build_root:
   image_stream_tag:
-    name: builder
-    namespace: ocp
+    name: builder-priv
+    namespace: ocp-private
     tag: rhel-8-golang-openshift-4.6
+canonical_go_repository: github.com/openshift/network-tools
 images:
 - dockerfile_path: Dockerfile.rhel7
   from: base
   inputs:
-    ocp_builder_golang-1.12:
+    ocp_builder_rhel-8-golang-1.15-openshift-4.7:
       as:
-      - registry.svc.ci.openshift.org/ocp/builder:golang-1.12
-  to: debug-network
+      - registry.svc.ci.openshift.org/ocp/builder:rhel-8-golang-1.15-openshift-4.7
+  to: network-tools
 promotion:
-  name: "4.6"
-  namespace: ocp
+  disabled: true
+  name: 4.7-priv
+  namespace: ocp-private
 resources:
   '*':
     requests:
       cpu: "1"
       memory: 1Gi
 tag_specification:
-  name: "4.6"
-  namespace: ocp
+  name: 4.7-priv
+  namespace: ocp-private
 test_binary_build_commands: make build GO_BUILD_FLAGS:='-race' --warn-undefined-variables
 tests:
 - as: e2e-aws
@@ -43,6 +53,6 @@ tests:
     cluster_profile: aws
     workflow: openshift-e2e-aws
 zz_generated_metadata:
-  branch: release-4.6
-  org: openshift
-  repo: debug-network
+  branch: release-4.7
+  org: openshift-priv
+  repo: network-tools

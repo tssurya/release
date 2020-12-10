@@ -922,12 +922,12 @@ buildFarm:
       - .*openshift-csi-node-driver-registrar-release-4.1-presubmits.yaml$
       - .*openshift-custom-domains-operator-master-presubmits.yaml$
       - .*openshift-custom-resource-status-master-presubmits.yaml$
-      - .*openshift-debug-network-release-4.7-presubmits.yaml$
-      - .*openshift-debug-network-master-presubmits.yaml$
+      - .*openshift-network-tools-release-4.7-presubmits.yaml$
+      - .*openshift-network-tools-master-presubmits.yaml$
       - .*openshift-descheduler-release-4.1-presubmits.yaml$
       - .*openshift-dedicated-admin-operator-master-presubmits.yaml$
       - .*openshift-descheduler-release-3.10-presubmits.yaml$
-      - .*openshift-debug-network-release-4.6-presubmits.yaml$
+      - .*openshift-network-tools-release-4.6-presubmits.yaml$
       - .*openshift-descheduler-release-4.3-presubmits.yaml$
       - .*openshift-descheduler-release-4.5-presubmits.yaml$
       - .*openshift-descheduler-release-4.6-presubmits.yaml$

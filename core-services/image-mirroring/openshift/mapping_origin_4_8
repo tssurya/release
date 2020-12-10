@@ -85,7 +85,7 @@ registry.ci.openshift.org/origin/4.8:csi-livenessprobe quay.io/openshift/origin-
 registry.ci.openshift.org/origin/4.8:csi-node-driver-registrar quay.io/openshift/origin-csi-node-driver-registrar:4.8 quay.io/openshift/origin-csi-node-driver-registrar:4.8.0
 registry.ci.openshift.org/origin/4.8:csi-snapshot-controller quay.io/openshift/origin-csi-snapshot-controller:4.8 quay.io/openshift/origin-csi-snapshot-controller:4.8.0
 registry.ci.openshift.org/origin/4.8:csi-snapshot-validation-webhook quay.io/openshift/origin-csi-snapshot-validation-webhook:4.8 quay.io/openshift/origin-csi-snapshot-validation-webhook:4.8.0
-registry.ci.openshift.org/origin/4.8:debug-network quay.io/openshift/origin-debug-network:4.8 quay.io/openshift/origin-debug-network:4.8.0
+registry.ci.openshift.org/origin/4.8:network-tools quay.io/openshift/origin-network-tools:4.8 quay.io/openshift/origin-network-tools:4.8.0
 registry.ci.openshift.org/origin/4.8:deployer quay.io/openshift/origin-deployer:4.8 quay.io/openshift/origin-deployer:4.8.0
 registry.ci.openshift.org/origin/4.8:descheduler quay.io/openshift/origin-descheduler:4.8 quay.io/openshift/origin-descheduler:4.8.0
 registry.ci.openshift.org/origin/4.8:docker-builder quay.io/openshift/origin-docker-builder:4.8 quay.io/openshift/origin-docker-builder:4.8.0
